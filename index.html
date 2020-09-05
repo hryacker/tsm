@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>THE SELECT MOSCOW</title>
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/540px.css">
+    </head>
+    <body>        
+        <div class="page-container">
+            <a href="#" class="logo"><img src="assets/img/logo.svg" alt=""></a>            
+            <a href="#" class="logo logo-mobile"><img src="assets/img/logo_mobile.svg" alt=""></a>            
+            <header>
+                <div class="mobile-blur"></div>
+                <div class="container-fluid">
+                    <div class="row nav-row">
+                        <div>
+                            <button class="btn-close-modal"><img src="assets/img/modal_close.svg" alt=""></button>
+                            <button class="btn-burger" data-modal-content="burger"><img src="assets/img/burger_active.svg" alt="меню"></button>
+                            <button class="btn-search" data-modal-content="search"><img src="assets/img/search.svg" alt="поиск"></button>
+                            <button class="btn-login-mobile" data-modal-content="login"><img src="assets/img/login-mobile.svg" alt="войти"></button>
+                        </div>
+                        
+                        <nav class="main-nav">                            
+                            <ul>
+                                <li><a href="#">New</a></li>                                
+                                <li class="link-collection">
+                                    <a href="#">Коллекция</a>
+                                    <div class="collection-wrap">                                        
+                                        <div class="collection-container">                    
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-6 collection-links">
+                                                       <ul>
+                                                            <li><a href="#">Пиджаки</a></li>
+                                                            <li><a href="#">Платья</a></li>
+                                                            <li><a href="#">Брюки</a></li>
+                                                            <li><a href="#">Рубашки и топы</a></li>
+                                                        </ul> 
+                                                    </div>                            
+                                                    <div class="col-6 collection-items">
+                                                        <a href="#">
+                                                            <img src="assets/img/103961624_n.jpg" alt="">
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/img/114087980_n.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </li>
+                                <li><a href="#">Скидки</a></li>                                
+                            </ul>                             
+                            <ul>
+                                <li><a href="#">Скоро</a></li>
+                                <li><a href="#">Lookbook</a></li>
+                                <li><a href="#" data-modal-content="login">Войти</a></li>
+                            </ul>
+                        </nav>
+                        <div class="btns-header">
+                            <button class="favorites"><img src="assets/img/favorites.svg" alt="избранное"></button>   
+                            <button class="cart" data-modal-content="cart"><img src="assets/img/cart.svg" alt="корзина"></button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section class="product-card">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="product-slider col-12 col-md-6">
+                                    <div><img src="assets/img/IMG_2386.jpg" alt=""></div>
+                                    <div><img src="assets/img/IMG_2328.jpg" alt=""></div>
+                                    <div><img src="assets/img/IMG_2373.jpg" alt=""></div>
+                            </div>
+                            <div class="product-info col-12 col-md-6">
+                                <button class="product-card-back" type="button"><img src="assets/img/prev_active.svg" alt="">Платья</button>
+                                <div class="info-wrap">
+                                    <h1 class="product-title">ПЛАТЬЕ-КОМБИНАЦИЯ БЕЖЕВОЕ</h1>
+                                    <span class="price">4 900 руб.</span>
+                                    <div class="colors-wrap">
+                                        <span class="color-title">Цвет: Бежевый</span>
+                                        <ul class="colors-list row">
+                                            <li id="js1" class="colors-item color-1 active"></li>
+                                            <li id="js2" class="colors-item color-2"></li>
+                                            <li id="js3" class="colors-item color-3"></li>
+                                        </ul>
+                                    </div>
+                                    <div class="sizes-wrap">
+                                        <div class="sizes-info">
+                                            <span>Размер</span>
+                                            <button class="btn-table-size" data-modal-content="table-size">Таблица размеров</button>  
+                                        </div>                                                     
+                                        <ul class="sizes-list">
+                                            <li class="size-avaliable">XS</li>
+                                            <li class="size-few">S</li>
+                                            <li class="size-subscribe" data-modal-content="sub-size">M</li>
+                                            <li class="size-subscribe" data-modal-content="sub-size">L</li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-add-to-wrap">
+                                        <button class="add-to-cart" data-product-id="art" data-modal-content="cart">ДОБАВИТЬ В КОРЗИНУ</button>
+                                        <button class="add-to-favorites text-light">
+                                            <span class="favorites-img">
+                                                <img class="active" src="assets/img/favorites_stroke_light.svg" alt="">
+                                                <img src="assets/img/favorites_fill_light.svg" alt="">
+                                            </span>                                            
+                                            Добавить в избранное
+                                        </button>
+                                    </div>
+                                    <div class="product-params">
+                                        <p>Платье-комбинация с регулирующимися лямками</p>
+                                        <ul class="params-list">
+                                            <li>
+                                                <span class="param-title">Состав и уход</span>
+                                                    <div class="sub-list-wrap">
+                                                        <span>полиэстер 91%, эластан 9%</span>
+                                                        <ul class="sub-list">
+                                                            <li><span>деликатная машинная или ручная стирка до 30°С;</span></li>
+                                                            <li>химчистка;</li>
+                                                            <li>не отбеливать;</li>
+                                                        </ul>                                                
+                                                    </div>
+                                            </li>
+                                            <li>
+                                                <span class="param-title">Параметры модели</span>
+                                                <div class="sub-list-wrap">                                                    
+                                                    <span>полиэстер 91%, эластан 9%</span>
+                                                    <ul class="sub-list">
+                                                        <li>деликатная машинная или ручная стирка до 30°С;</li>
+                                                        <li>химчистка;</li>
+                                                        <li>не отбеливать;</li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="param-title">Обмеры модели</span>
+                                                <div class="sub-list-wrap">                                                    
+                                                    <span>полиэстер 91%, эластан 9%</span>
+                                                    <ul class="sub-list">
+                                                        <li>деликатная машинная или ручная стирка до 30°С;</li>
+                                                        <li>химчистка;</li>
+                                                        <li>не отбеливать;</li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+                <section class="add-to-product">
+                    <div class="container-fluid">
+                        <div class="row mlr0">
+                            <div class="col-12 col-md-6 section-title">
+                                <span class="text-black">ДОПОЛНИТЬ ОБРАЗ</span>
+                            </div>
+                            <div class="col-items col-12 col-md-6">
+                                <div class="add-item product-item">
+                                    <a href="#">
+                                        <img src="assets/img/IMG_2227_1.jpg" alt="">
+                                    </a>
+                                    <div class="item-info">
+                                        <a href="#" class="item-title">Пиджак двубортный Daddy</a>
+                                        <div class="item-price-wrap">
+                                            <span class="item-price">9 800 руб.</span>
+                                            <span class="item-price-old">3 700 руб.</span>
+                                        </div>
+                                    </div>
+                                </div>        
+                                <div class="add-item product-item">
+                                    <a href="#"><img src="assets/img/IMG_2227_2.jpg" alt=""></a>
+                                    <div class="item-info">
+                                        <a href="#" class="item-title">Майка бежевая</a>
+                                        <div class="item-price-wrap">
+                                            <span class="item-price">2 500 руб.</span>
+                                            <span class="item-price-old">3 700 руб.</span>
+                                        </div>
+                                    </div>
+                                </div>        
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="may-like">
+                    <div class="may-like-header">
+                        <span class="section-title text-black">ВАМ МОЖЕТ ПОНРАВИТЬСЯ</span>
+                        <div class="may-like-slider-arrows"></div>                        
+                    </div>
+                    <div class="may-like-slider">
+                        <div class="product-item">
+                            <a href="#">
+                                <img src="assets/img/IMG_2227_3.jpg" alt="">
+                            </a>
+                            <div class="item-info">
+                                <a href="#" class="item-title">Майка черная</a>
+                                <div class="item-price-wrap">
+                                    <span class="item-price">2 500 руб.</span>
+                                    <span class="item-price-old"></span>
+                                </div>                            
+                            </div>                            
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <img src="assets/img/IMG_2227_4.jpg" alt="">
+                            </a>
+                            <div class="item-info">
+                                <a href="#" class="item-title">Боди леопард</a>
+                                <div class="item-price-wrap">
+                                    <div class="item-price">1 800 руб.</div>
+                                    <div class="item-price-old">2 500 руб.</div>
+                                </div>
+                            </div>                          
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <img src="assets/img/IMG_2227_5.jpg" alt="">
+                            </a>
+                            <div class="item-info">
+                                <a href="#" class="item-title">Платье-пиджак Love черное</a>
+                                <div class="item-price-wrap">
+                                    <span class="item-price">11 900 руб.</span>
+                                    <span class="item-price-old"></span>
+                                </div>
+                            </div>                          
+                        </div>                        
+                        <div class="product-item">
+                            <a href="#">
+                                <img src="assets/img/IMG_2227_6.jpg" alt="">
+                            </a>
+                            <div class="item-info">
+                                <a href="#" class="item-title">Платье-комбинация</a>
+                                <div class="item-price-wrap">
+                                    <span class="item-price">4 900 руб.</span>
+                                    <span class="item-price-old"></span>
+                                </div>
+                            </div>                          
+                        </div>                        
+                        <div class="product-item">
+                            <a href="#">
+                                <img src="assets/img/IMG_2227_9.jpg" alt="">
+                            </a>
+                            <div class="item-info">
+                                <a href="#" class="item-title">Платье Сабина</a>
+                                <div class="item-price-wrap">
+                                    <span class="item-price">6 500 руб.</span>
+                                    <span class="item-price-old"></span>
+                                </div>
+                            </div>                          
+                        </div>                        
+                        <div class="product-item">
+                            <a href="#">
+                                <img src="assets/img/IMG_2227_10.jpg" alt="">
+                            </a>
+                            <div class="item-info">
+                                <a href="#" class="item-title">Платье с квадратным вырезом голубое</a>
+                                <div class="item-price-wrap">
+                                    <span class="item-price">6 500 руб.</span>
+                                    <span class="item-price-old"></span>
+                                </div>
+                            </div>                          
+                        </div>                        
+                    </div>
+                </section>
+            </main>
+            <footer class="page-footer">
+                <div class="container-fluid">
+                    <div class="row footer-row mlr0">
+                        <div class="footer-subscribe col-12 col-md-6">
+                            <div>
+                                <p>
+                                    Подпишитесь на обновления <br>
+                                    и специальные предложения
+                                </p>
+                                <form action="" method="POST">
+                                    <div class="sub-input-wrap">
+                                        <input type="text" name="email" placeholder="Эл. почта">
+                                        <button type="submit" class="btn-footer-sub"></button> 
+                                    </div>                                
+                                </form>
+                                <p>
+                                    Нажимая кнопку Подписаться, я даю <br>
+                                    согласие на обработку и передачу моих персональных данных
+                                </p>
+                            </div>
+                        </div>
+                                <div class="col-6 col-md-2">
+                                    <ul>
+                                        <li><a href="#">О нас</a></li>
+                                        <li><a href="#">Контакты</a></li>
+                                        <li><a href="#">Опт</a></li>
+                                        <li><a href="#">Оферта</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <ul>
+                                        <li><a href="#">Оплата и доставка</a></li>
+                                        <li><a href="#">Возврат</a></li>
+                                        <li><a href="#">Гарантия</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                    </ul>
+                                </div>
+                                <div class="block-contacts col-12 col-md-2">
+                                    <a href="tel:+7-903-018-30-56" class="phone">8 903 018-30-56</a>                                    
+                                    <a href="#" class="link-inst">
+                                        <img src="assets/img/instagram_ws.svg" alt="">
+                                        <span>the_select</span>
+                                    </a>
+                                </div>
+                    </div>
+                    <div class="comp-dev col-12">
+                        <span>Разработано в</span>
+                        <a href="#">
+                          <img src="assets/img/dev_logo.svg" alt="разработано в stik">
+                        </a>                        
+                    </div>
+                </div>
+            </footer>
+
+
+            
+            <div class="modal-module left">
+                <div class="modal-overlay">
+                </div>
+                <div class="modal-container">
+                    <button class="btn-close-modal"><img src="assets/img/modal_close.svg" alt=""></button>
+                    <div class="burger-wrap" >
+                        <div class="modal-content">
+                            <ul>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Опт</a></li>
+                                <li><a href="#">Оплата и доставка</a></li>
+                                <li><a href="#">Возврат</a></li>
+                                <li><a href="#">Гарантия</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Политика конфиденциальности</a></li>
+                                <li><a href="#">Оферта</a></li>                            
+                            </ul>
+                            <div class="block-contacts">
+                                <a href="tel:+7-903-018-30-56" class="phone">8 903 018-30-56</a>                                    
+                                <a href="#" class="link-inst">
+                                    <img src="assets/img/burger_instagram.svg" alt="">
+                                    <span>the_select</span>
+                                </a>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="search-wrap">
+                        <div class="modal-content">
+                            <span class="modal-title text-black">ПОИСК ПО САЙТУ</span>
+                            <form action="#" method="GET">
+                                <div class="search-input-wrap">                                    
+                                    <input type="text" name="search" placeholder="Что будем искать?">
+                                    <button class="btn-input-search" type="submit"></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>             
+                </div>
+            </div>
+            <div class="modal-module right">
+                <div class="modal-overlay"></div>                    
+                <div class="modal-container">
+                    <button class="btn-close-modal"><img src="assets/img/modal_close.svg" alt=""></button>
+                    <div class="login-wrap">
+                        <div class="modal-content">
+                            <div class="btns-auth">
+                                <button class="auth-login auth-active">ВОЙТИ</button>
+                                <button class="auth-register">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                            </div>
+                            <form id="login" action="#" method="POST" class="active">
+                                <fieldset>
+                                    <label>
+                                        <input type="text" name="auth-email" placeholder="Эл. почта">
+                                    </label>
+                                    <label>
+                                        <input type="password" name="auth-password" placeholder="Пароль">
+                                    </label>
+                                </fieldset>
+                                <button class="form-submit" type="submit">АВТОРИЗОВАТЬСЯ</button>
+                                <a href="#" class="forgot-password">Забыли пароль?</a>
+                            </form>
+                        </div>
+                    </div>    
+                    <div class="sub-size-wrap">
+                        <div class="modal-content">
+                            <span class="modal-title text-dark">УЗНАТЬ О ПОСТУПЛЕНИИ</span>
+                                <p class="rest-mail text-light">
+                                    Укажите свою почту, мы сообщим о поступлении товара:                                
+                                    <span class="text-dark">Платье-комбинация, бежевый Размер S</span>
+                                </p>
+                            <form id="modal-size-sub" action="#" method="POST">
+                                <label>
+                                    <input type="text" name="email" placeholder="Эл. почта">
+                                </label>
+                                <div class="agreement-wrap">
+                                    <fieldset>
+                                        <input type="checkbox" name="agreement" id="agreement">
+                                        <label for="agreement">Нажимая кнопку Подписаться, я даю согласие на обработку и передачу моих персональных данных      
+                                        </label>
+                                    </fieldset>
+                                    
+                                </div>
+                                <button class="form-submit" type="submit">ПОДПИСАТЬСЯ НА РАЗМЕР</button>
+                            </form>                            
+                        </div>
+                    </div>
+                    
+                    <div class="table-size-wrap">
+                        <div class="modal-content">
+                        <span class="modal-title text-black">ТАБЛИЦА РАЗМЕРОВ</span>
+                            <p class="text-light">
+                                Размерная сетка THE SELECT Moscow включает размеры: XS, S, M, L. В коллекциях встречаются и размер XL, мы можем выполнить его на заказ. Также есть вещи свободного кроя – размера ONE SIZE.
+                            </p>
+                            <p class="text-light">
+                                Для вашего удобства мы всегда указываем параметры модели, представляющей товар на сайте. Если вы сомневаетесь в выборе размера, пожалуйста, звоните нам по номеру 8 903 018-30-56
+                            </p>
+                            <table class="text-black">
+                                <thead>
+                                    <tr>
+                                        <td>Размер</td>
+                                        <td>Обхват груди, см</td>
+                                        <td>Обхват талии, см</td>
+                                        <td>Обхват бедер, см</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>XXS</td>
+                                        <td>80-84</td>
+                                        <td>60-64</td>
+                                        <td>88-92</td>
+                                    </tr>
+                                    <tr>
+                                        <td>XS</td>
+                                        <td>84-86</td>
+                                        <td>64-66</td>
+                                        <td>92-94</td>
+                                    </tr>
+                                    <tr>
+                                        <td>S</td>
+                                        <td>86-90</td>
+                                        <td>66-68</td>
+                                        <td>94-96</td>
+                                    </tr>
+                                    <tr>
+                                        <td>M</td>
+                                        <td>90-92</td>
+                                        <td>68-72</td>
+                                        <td>96-100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>L</td>
+                                        <td>92-96</td>
+                                      <td>72-78</td>
+                                        <td>100-104</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>                        
+                    </div>
+                    <div class="cart-wrap">
+                        <div class="modal-content">
+                            <div class="modal-title">КОРЗИНА (2)</div>
+                            <div class="cart-products-wrap container-fluid">
+                                <div class="row cart-product-row">
+                                    <div class="col cart-product-img">
+                                        <img src="assets/img/cart_1.jpg" alt="">
+                                    </div>
+                                    <div class="col-5 col-sm-6 cart-product-info">
+                                        <div class="cart-product-title">Платье-комбинация, бежевый</div>
+                                        <div class="cart-product-color">Цвет: Бежевый</div>
+                                        <div class="cart-product-size">Размер: S</div>
+                                    </div>
+                                    <div class="col cart-product-price">
+                                        <div>4 900 руб.</div>
+                                        <button class="cart-delete-product text-light">удалить</button>
+                                    </div>
+                                </div>
+                                <div class="row cart-product-row">
+                                    <div class="col cart-product-img">
+                                        <img src="assets/img/cart_2.jpg" alt="">
+                                    </div>
+                                    <div class="col-5 col-sm-6 cart-product-info">
+                                        <div class="cart-product-title">Боди леопард</div>
+                                        <div class="cart-product-color">Цвет: леопард</div>
+                                        <div class="cart-product-size">Размер: S</div>
+                                    </div>
+                                    <div class="col cart-product-price">
+                                        <div>1800 руб.</div>
+                                        <button class="cart-delete-product text-light">удалить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btns-cart-choice">
+                                <button class="btn-continue text-black">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+                                <button class="btn-order text-white">ОФОРМИТЬ ЗАКАЗ</button>
+                            </div>
+                    </div>
+                    </div>
+                    
+                </div>
+            </div> 
+        </div>
+        
+        <div class="mobile-burger">            
+            <form action="#" method="GET">
+                <div class="search-input-wrap">                                    
+                    <input type="text" name="search" placeholder="Поиск по сайту">
+                    <button class="btn-input-search" type="submit"></button>
+                </div>
+            </form>
+            <ul>
+                <li class="li-collection">
+                    <button class="btn-collection">Коллекция</button>                    
+                    <ul class="collection-sub">
+                        <li><a href="">New</a></li>
+                        <li><a href="">Скидки</a></li>
+                        <li><a href="">Пиджаки</a></li>
+                        <li><a href="">Платья</a></li>
+                        <li><a href="">Брюки</a></li>
+                        <li><a href="">Рубашки и топы</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Скоро</a></li>
+                <li><a href="">Lookbook</a></li>
+                <li><a href="">О нас</a></li>
+                <li><a href="">Контакты</a></li>
+                <li><a href="">Опт</a></li>
+                <li><a href="">Оплата и доставка</a></li>
+                <li><a href="">Возврат</a></li>
+                <li><a href="">Гарантия</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Политика конфиденциальности</a></li>
+                <li><a href="">Оферта</a></li>
+                <li class="li-communication">
+                    <a href="tel:+7-903-018-30-56">8 903 018-30-56</a>                                    
+                    <a href="#" class="link-inst">
+                        <img src="assets/img/burger_instagram.svg" alt="">
+                        <span>the_select</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <script src="assets/js/jquery-v3.5.1.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
